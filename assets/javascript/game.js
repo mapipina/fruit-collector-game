@@ -27,7 +27,28 @@ var currentScore = 0;
 	straw = Math.floor(Math.random() * (12));
 
 	ber = Math.floor(Math.random() * (12));
-	
+
+// defining the callbacks that are needed for the click events
+var callbackPine = function () {
+	$("#scoreCounter").text(pine);
+
+};
+
+var callbackAvo = function () {
+	$("#scoreCounter").text(avo);
+
+};
+
+var callbackStraw = function () {
+	$("#scoreCounter").text(straw);
+
+};
+
+var callbackBer = function () {
+	$("#scoreCounter").text(ber);
+}
+
+
 
 //establishing on click events
 $("#pineapple").on("click", callbackPine);
@@ -41,14 +62,6 @@ $("#berry").on("click", callbackBer);
 
 
 //
-
-
-
-
-
-
-
-
 
 
 
