@@ -4,6 +4,8 @@
 	<title>Fruit Collector</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://bootstrapdocs.com/v3.3.6/docs/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -13,26 +15,34 @@
 	<div class="container">
 		<div class="jumbotron">
 	        <h1>Exotic Fruit Collector</h1>
-	    <div>
+	    <div class="instructions">
 	        <p>You will be given a random number at the start of the game.</p>
 	        <p>4 fruits below. Clicking on one will add a specific amount of points to your score.</p>
 	        <p>If your score matches the random number, then you win. If your score goes above the random number, then you lose.</p>
 	        <p>The value of the fruit is hidden until you click on it.</p>
 	        <p>The value of the fruit will change every time the game starts.</p>
 	    </div>
+	<div class="status">
 	    <div>
-	    	<p id="randomNumber">this is where the random number will live</p>
+	    	<p id="randomNumber"></p>
 	    </div>
-	    <div>
+	    <div class="aside">
 	    		<p>this is the hidden you win/lose</p>
 				<p id="winsCounter">Wins</p>
 				<p id="lossCounter">Losses</p>
-			</div>
+		</div>
+	</div>
+		<div class="row" id="fruits">
+			<div id="pineapple"><img src="assets/images/pineapple.png"></div>
+			<div id="avocado"><img src="assets/images/avocado.png"></div>
+			<div id="strawberry"><img src="assets/images/strawberry.png"></div>
+			<div id="berry"><img src="assets/images/raspberry.png"></div>
+		</div>
 				<p>Your total score is</p>
 				<p id="scoreCounter">this is where the score keeper will take place</p>
       </div>
 	</div>
-
+	<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 		<!-- js file-->
 	<script src="assets/javascript/game.js"></script>
 </body>

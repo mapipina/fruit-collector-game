@@ -1,6 +1,6 @@
 body {
-	background-image: url("../images/mickey-mouse-background-wallpaper-18.jpg");
-	background-repeat: no-repeat;
+	background-image: url("../images/pineapple.jpg");
+/*	background-repeat: no-repeat; */
 	background-attachment: local;
 	font-family: 'Poppins', sans-serif;
 }
@@ -14,4 +14,27 @@ body {
 h1 {
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
+}
+
+.instructions {
+	background-color: green;
+}
+
+#randomNumber {
+	background-color: blue;
+	color: white;
+}
+
+#fruits img {
+	float: left;
+	background-color: white;
+	margin: 10px;
+}
+
+.status {
+	background-color: white;
+} 
+
+p {
+	background-color: white;
 }
