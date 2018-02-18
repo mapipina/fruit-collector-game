@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fruit Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://bootstrapdocs.com/v3.3.6/docs/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+	        <h1>Exotic Fruit Collector</h1>
+	    <div>
+	        <p>You will be given a random number at the start of the game.</p>
+	        <p>4 fruits below. Clicking on one will add a specific amount of points to your score.</p>
+	        <p>If your score matches the random number, then you win. If your score goes above the random number, then you lose.</p>
+	        <p>The value of the fruit is hidden until you click on it.</p>
+	        <p>The value of the fruit will change every time the game starts.</p>
+	    </div>
+	    <div>
+	    	<p id="randomNumber">this is where the random number will live</p>
+	    </div>
+	    <div>
+	    		<p>this is the hidden you win/lose</p>
+				<p id="winsCounter">Wins</p>
+				<p id="lossCounter">Losses</p>
+			</div>
+				<p>Your total score is</p>
+				<p id="scoreCounter">this is where the score keeper will take place</p>
+      </div>
+	</div>
+
+		<!-- js file-->
+	<script src="assets/javascript/game.js"></script>
+</body>
+</html>
