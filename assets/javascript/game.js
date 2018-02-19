@@ -37,11 +37,8 @@ $(document).ready(function() {  //game will start when the document is ready
 
 //okay, I'll need a random number generator for each fruit
 	pine = Math.floor(Math.random() * (12));
-
-	avo = Math.floor(Math.random() * (12));
-	
+	avo = Math.floor(Math.random() * (12));	
 	straw = Math.floor(Math.random() * (12));
-
 	ber = Math.floor(Math.random() * (12));
 
 
@@ -53,8 +50,14 @@ $(document).ready(function() {  //game will start when the document is ready
 
 var reset = function () {
 	$("#hidden").text(" ");
-	return random;
-	$("#scoreCounter").empty();
+	currentScore = 0;
+// I'm redefining these variables in an attempt to change the number
+	var random = Math.floor(Math.random() * (101) + 19);
+	$("#randomNumber").text(random);
+	pine = Math.floor(Math.random() * (12));
+	avo = Math.floor(Math.random() * (12));	
+	straw = Math.floor(Math.random() * (12));
+	ber = Math.floor(Math.random() * (12));
 };
 
 //have to create function for tallying up score
@@ -62,13 +65,13 @@ var tally = function (){
 	if (currentScore === random) {
 		wins++;
 		$("#hidden").text("You win!");
-		$("#winsCounter").append(wins);
+		$("#winsCounter").text(wins);
 		reset ();
 	} 
 	else if (currentScore > random) {
 		losses++;
 		$("#hidden").text("You lose!");
-		$("#lossCounter").append(losses);
+		$("#lossCounter").text(losses);
 		reset ();
 	} 
 	else if (currentScore < random) {
@@ -114,12 +117,6 @@ $("#avocado").on("click", callbackAvo);
 $("#strawberry").on("click", callbackStraw);
 
 $("#berry").on("click", callbackBer);
-
-
-
-//
-
-
 
 
 });
