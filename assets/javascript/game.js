@@ -29,6 +29,8 @@ $(document).ready(function() {  //game will start when the document is ready
 	var straw;
 	var ber;
 	var currentScore = 0;
+	var youWin = "You win!";
+	var youLose = "You lose!"
 
 //random number generator. i'll have to reference it later as well so the number changes once a win/lose occurs
 	random = Math.floor(Math.random() * (101) + 19);
@@ -49,7 +51,6 @@ $(document).ready(function() {  //game will start when the document is ready
 // the game needs to know to reset
 
 var reset = function () {
-	$("#hidden").text(" ");
 	currentScore = 0;
 // I'm redefining these variables in an attempt to change the number
 	var random = Math.floor(Math.random() * (101) + 19);
@@ -64,13 +65,13 @@ var reset = function () {
 var tally = function (){
 	if (currentScore === random) {
 		wins++;
-		$("#hidden").text("You win!");
+		$("#hidden").text(youWin);
 		$("#winsCounter").text(wins);
 		reset ();
 	} 
 	else if (currentScore > random) {
 		losses++;
-		$("#hidden").text("You lose!");
+		$("#hidden").text(youLose);
 		$("#lossCounter").text(losses);
 		reset ();
 	} 

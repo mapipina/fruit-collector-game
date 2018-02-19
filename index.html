@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Fruit Collector</title>
+	<link rel="icon"  type="image/png" href="assets/images/pineapple.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<!-- Added link to the jQuery Library -->
@@ -22,12 +23,12 @@
 	        <p>The value of the fruit is hidden until you click on it.</p>
 	        <p>The value of the fruit will change every time the game starts.</p>
 	    </div>
-	<div class="status">
-	    <div>
+	<div class="row">
+	    <div class="col-md-3" id="number">
 	    	<p id="randomNumber"></p>
 	    </div>
-	    <div class="aside">
-	    		<p id="hidden"></p>
+	    <div class="aside col-md-6">
+	    		<p id="hidden">  </p>
 				<p>Wins <span id="winsCounter"></span></p>
 				<p>Losses <span id="lossCounter"></span></p>
 		</div>
@@ -38,8 +39,10 @@
 			<div id="strawberry"><img src="assets/images/strawberry.png"></div>
 			<div id="berry"><img src="assets/images/raspberry.png"></div>
 		</div>
+			<div class="score-div">
 				<p>Your total score is</p>
-				<p id="scoreCounter">  </p>
+				<p id="scoreCounter"></p>
+			</div>
       </div>
 	</div>
 	<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
