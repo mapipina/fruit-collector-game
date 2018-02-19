@@ -33,15 +33,15 @@ $(document).ready(function() {  //game will start when the document is ready
 	var youLose = "You lose!"
 
 //random number generator. i'll have to reference it later as well so the number changes once a win/lose occurs
-	random = Math.floor(Math.random() * (101) + 19);
+	random = Math.floor(Math.random() * (102) + 19);
 	$("#randomNumber").text(random);
 
 
 //okay, I'll need a random number generator for each fruit
-	pine = Math.floor(Math.random() * (12));
-	avo = Math.floor(Math.random() * (12));	
-	straw = Math.floor(Math.random() * (12));
-	ber = Math.floor(Math.random() * (12));
+	pine = Math.floor(Math.random() * (12) +1);
+	avo = Math.floor(Math.random() * (12) +1);	
+	straw = Math.floor(Math.random() * (12) +1);
+	ber = Math.floor(Math.random() * (12) +1);
 
 
 //now I need to define current score... which will be tricky bc all of my callbacks go to the score counter already.
@@ -53,12 +53,12 @@ $(document).ready(function() {  //game will start when the document is ready
 var reset = function () {
 	currentScore = 0;
 // I'm redefining these variables in an attempt to change the number
-	var random = Math.floor(Math.random() * (101) + 19);
+	var random = Math.floor(Math.random() * (102) + 19);
 	$("#randomNumber").text(random);
-	pine = Math.floor(Math.random() * (12));
-	avo = Math.floor(Math.random() * (12));	
-	straw = Math.floor(Math.random() * (12));
-	ber = Math.floor(Math.random() * (12));
+	pine = Math.floor(Math.random() * (12) +1);
+	avo = Math.floor(Math.random() * (12) +1);	
+	straw = Math.floor(Math.random() * (12) +1);
+	ber = Math.floor(Math.random() * (12) +1);
 };
 
 //have to create function for tallying up score
