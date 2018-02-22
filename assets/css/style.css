@@ -1,5 +1,5 @@
 body {
-	background-image: url("../images/pineapple.jpg");
+	background-image: url("../images/pineapple.jpg"); 
 	background-attachment: local;
 	font-family: 'Poppins', sans-serif;
 }
@@ -17,14 +17,14 @@ h1 {
 }
 
 .instructions {
-	background-color: rgba(0,102,0,.7);
+	background-color: rgba(0,102,0,.8);
 	color: white;
 	padding: 10px;
 }
 
 
 #randomNumber {
-	background-color: rgba(255,128,0,.7);
+	background-color: rgba(255,128,0,.8);
 	color: white;
 	padding: 35px 0 35px 0;
 	text-align: center;
@@ -36,8 +36,8 @@ h1 {
 
 #fruits img {
 	float: left;
-	margin: 15px;
-	background-color: rgba(0,102,0,.7);
+	margin: 15px 60px 15px 60px;
+	background-color: rgba(0,102,0,.8);
 	padding: 5px;
 }
 
@@ -49,15 +49,16 @@ h1 {
 }
 
 .aside {
-	background-color: rgba(255,255,0,.7);
+	background-color: rgba(255,255,0,.8);
 	margin: 10px;
 	padding: 10px;
 	float: right;
 }
 
 .score-div {
-	background-color: rgba(255,255,0,.7);
+	background-color: rgba(255,255,0,.8);
 	padding: 35px 0 35px 0;
+	text-align: center;
 }
 
 .score-div p {
