@@ -52,8 +52,9 @@ $(document).ready(function() {  //game will start when the document is ready
 
 var reset = function () {
 	currentScore = 0;
+	$("#scoreCounter").text(currentScore);
 // I'm redefining these variables in an attempt to change the number
-	var random = Math.floor(Math.random() * (102) + 19);
+	random = Math.floor(Math.random() * (102) + 19);
 	$("#randomNumber").text(random);
 	pine = Math.floor(Math.random() * (12) +1);
 	avo = Math.floor(Math.random() * (12) +1);	
@@ -68,15 +69,18 @@ var tally = function (){
 		$("#hidden").text(youWin);
 		$("#winsCounter").text(wins);
 		reset ();
+		console.log(currentScore);
 	} 
 	else if (currentScore > random) {
 		losses++;
 		$("#hidden").text(youLose);
 		$("#lossCounter").text(losses);
 		reset ();
+		console.log(currentScore);
 	} 
 	else if (currentScore < random) {
 		$("#hidden").text(" ")
+		console.log(currentScore);
 	} 
 };
 
